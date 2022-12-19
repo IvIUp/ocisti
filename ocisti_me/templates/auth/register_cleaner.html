@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}Register Cleaner{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+        <label>
+            Username <input name="username" id="username" required>
+        </label>
+        <label>
+            Password <input type="password" name="password" id="password" required>
+        </label>
+        <label>
+            First Name <input name="first_name" id="first_name">
+        </label>
+        <label>
+            Last Name <input name="last_name" id="last_name">
+        </label>
+        <label>
+            Birth <input type="date" name="birth_date" value="2000-05-23">
+        </label>
+        <label>
+            Location <input name="location" id="location">
+        </label>
+        <label>
+            Description <input name="description" id="description">
+        </label>
+        <input type="submit" value="Register">
+    </form>
+{% endblock %}
+
